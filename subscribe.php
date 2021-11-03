@@ -16,7 +16,7 @@ if($_SERVER['REQUEST_METHOD'] == "POST"){
 		if($stmt->execute() && !mysqli_num_rows($select)){
 			echo "Subscribed successfully.<br/><br/>";
 		}else{
-			echo "Email is already subscribed.<br/>";
+			echo "Email is already subscribed<br/>";
 		}
 }
 ?><br><br>

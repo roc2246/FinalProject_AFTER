@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="simple.xsl"?>
+<stats>
+	
+	<category>
+	<cat>Child:</cat>
+		<data>$46.00</data>
+	</category>
+	
+	<category>
+	<cat>Teen:</cat>
+		<data>$49.00</data>
+	</category>
+	
+	<category>
+	<cat>Adult:</cat>
+		<data>$62.00</data>
+	</category>
+	
+	<category>	
+	<cat>Senior:</cat>
+		<data>$46.00</data>
+	</category>	
+		
+</stats>

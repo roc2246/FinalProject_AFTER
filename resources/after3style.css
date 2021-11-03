@@ -1,0 +1,367 @@
+body {
+	width: auto;
+  
+	color: #000080 ;
+	background-color: #b29700;
+  
+	font-family: "Times New Roman", "Centabel Book", serif;
+	font-size: 14pt;
+}
+
+
+/* Links */
+
+a {
+	color: #8b0000;
+	text-decoration: none;
+}
+
+a:hover {
+	background-color: yellow;
+}
+
+
+/* Header */
+
+header {
+	border-bottom-style: solid;
+	border-color: black;
+}
+
+header h1 {
+	font-family: Impact, Arial, sans-serif;
+	font-size: 64px;
+      
+	margin-top: 20px;
+	margin-bottom: 0px;
+	margin-left: 15px;
+}
+
+header h4 {
+	font-family: Arial, Georgia, sans-serif;
+  
+	margin-left: 100px;
+	margin-top: 0px;
+}
+
+header h1, header h4 {
+	color: #ff8c00;
+  
+	text-shadow:
+		-1px -1px 0 #000,
+		1px -1px 0 #000,
+		-1px 1px 0 #000,
+		1px 1px 0 #000;
+}
+
+
+/* Navigation - Left Hand */
+
+nav {
+	position: absolute;
+	padding-right: 40px;
+  
+	background-color: #ffbf00;
+  
+	height: 100%;
+  
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-color: black;
+}
+
+nav ul {
+	list-style: none;
+}
+
+nav li {
+	margin-top: 5px;
+}
+
+
+/* Main Content */
+
+h1, h2, h6 {
+	color: #013220;
+}
+
+#content {
+	margin-left: 200px;
+	margin-right: 45px;
+}
+
+#content h1, h2 {
+	text-align: center;  
+}
+
+
+/* Featured Resorts */
+  
+#FeaturedResorts {
+	width: 240px;
+	margin-bottom: 60px;
+  
+	float: left;
+}    
+
+
+/* Movie of the Week */
+
+#movie {
+	display: inline-grid;
+	grid-template-columns: auto auto auto;
+	grid-template-rows: auto auto;
+	grid-column-gap: 10px;
+  
+	margin-left: 60px;
+	margin-bottom: 60px;
+}
+
+#movie h2 {
+	grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.movieoftheweek {
+	grid-column-start: 1;
+    grid-column-end: 1;
+}
+
+.moviedescription {
+	grid-column-start: 2;
+    grid-column-end: 3;
+  
+	border-style: solid;
+	border-radius: 10px;
+	border-color: black;
+  
+	width: 320px;
+	height: 240px;
+  
+	padding-right: 20px;
+  
+	background-color: #C0C0C0;
+	color: black;
+  
+	overflow: scroll;
+  
+}
+
+.moviedescription ul li{
+	list-style-type: none;
+	margin-top: 5px;
+}
+
+
+/* Used on pages with black-bordered grey boxes */
+.details {
+	font-weight: bold;
+}
+
+
+/* For Resort Pages  */
+
+img#ResortImage {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 40px;
+}
+
+/*Resort Pages - Resort Info*/
+
+.ResortInfoHeading {
+	margin-top: 40px;
+}
+
+h6 {
+	font-size: 16px;
+}
+
+#googleMaps {
+	width: 600px;
+	height: 400px;
+	margin: auto;
+	margin-bottom: 100px;
+}
+
+#bitsofinfo {
+	float: left;
+	width: 320px;
+	height: 240px;
+	margin-bottom: 75px;
+	list-style: none;
+  
+	border-style: solid;
+	border-radius: 10px;
+	border-color: black;
+  
+	padding: 20px;
+	margin-bottom: 80px;
+  
+	background-color: #C0C0C0;
+	color: black;
+}
+
+
+#selections {
+	margin-left: 400px;
+}
+
+/*Quiz Page*/
+#quizResults {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 40%;
+  
+	border-style: solid;
+	border-radius: 10px;
+	border-color: black;
+  
+	background-color: #C0C0C0;
+	color: black;
+  
+	padding: 20px;
+	margin-bottom: 80px;
+  
+}
+
+
+/* Newsletter */
+
+#NewsletterImage {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 40px;
+}
+
+#NewsletterForm {
+	text-align: center;
+
+}
+
+
+#SignupReasons {
+	list-style: none;
+  
+	border-style: solid;
+	border-radius: 10px;
+	border-color: black;
+  
+	padding: 20px;
+	margin-bottom: 80px;
+  
+	background-color: #C0C0C0;
+	color: black;
+  
+
+}
+
+#SignupReasons li  {
+	margin-top: 5px;
+}
+
+
+/* Footer (Bottom Navigation) */
+
+footer {
+	margin-top: 100px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+  
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	text-align: center;
+  
+	border-top-style: solid;
+	border-top-color: black;
+  
+	background-color: #0d98ba;
+}
+
+footer a {
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+
+/* When Window gets Narrower */
+
+  @media only screen and (max-width: 1263px) {
+    
+    /* Featured Resorts */
+    
+    #FeaturedResorts {
+      width: 240px;
+      margin-bottom: 60px;
+      margin-left: 100px;
+      
+      float: left;
+    }    
+
+    /* Movie of the Week */
+    
+    #movie {
+      display: block;
+      margin-top: 0px;
+      margin-bottom: 60px;
+      margin-right: 100px;
+      
+      float: right;
+      
+      width: 320px;
+    }
+    
+    .moviedescription {
+      width: 300px;
+    }
+
+  }
+  
+  @media only screen and (max-width: 1097px) {
+    
+    /* Featured Resorts */
+    
+    #FeaturedResorts {
+      width: 240px;
+      margin-bottom: 60px;
+      margin-left: 0px;
+    }    
+
+    /* Movie of the Week */
+    
+    #movie {
+      display: block;
+      margin-top: 0px;
+      margin-bottom: 60px;
+      margin-left: 0px;
+      margin-right: 20px;
+      
+      width: 320px;
+    }
+
+  }
+  
+/* For Mobile Versions */
+
+  @media only screen and (max-width: 600px) {
+
+    /* Content */
+
+    #content {
+      margin-left: 200px;
+      margin-right: 45px;
+    }
+
+  }
+
+  
+
+  
+  
+  
+  

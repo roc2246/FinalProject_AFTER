@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="simple.xsl"?>
+<places>
+	
+		<location>
+			<place>Grand Summit Hotel</place>
+			<url>https://www.mountsnow.com/your-stay/grand-summit/</url>
+		</location>
+		
+		<location>
+			<place>Gray Ghost Inn</place>
+			<url>https://www.grayghostinn.com/</url>
+		</location>
+		
+		<location>
+			<place>The Inn at Mt. Snow</place>
+			<url>https://theinnatmountsnow.com/</url>
+		</location>
+		
+</places>

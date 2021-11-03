@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="simple.xsl"?>
+<places>
+	
+		<location>
+			<place>The Lodge at Bromley</place>
+			<url>https://www.lodgeatbromley.com/</url>
+		</location>
+		
+		<location>
+			<place>Seesaw's Lodge</place>
+			<url>https://www.seesawslodge.com/</url>
+		</location>
+		
+		<location>
+			<place>Bromley View Inn</place>
+			<url>https://www.bromleyviewinn.com/</url>
+		</location>
+		
+</places>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="simple.xsl"?>
+<places>
+	
+		<location>
+			<place>Valley View Saloon</place>
+			<url>https://www.valleyviewsaloon.com/</url>
+		</location>
+		
+		<location>
+			<place>1900' Burger</place>
+			<url>https://www.mountsnow.com/the-mountain/dining/1900-burger/</url>
+		</location>
+		
+		<location>
+			<place>Two Tannery Road</place>
+			<url>https://www.twotannery.com/</url>
+		</location>
+		
+</places>

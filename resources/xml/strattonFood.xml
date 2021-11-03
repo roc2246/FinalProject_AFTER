@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="simple.xsl"?>
+<places>
+	
+		<location>
+			<place>Mulligan's</place>
+			<url>https://www.mulligans-vt.com/</url>
+		</location>
+		
+		<location>
+			<place>Fire Tower Restaurant and Tavern</place>
+			<url>http://www.firetowerstratton.com/</url>
+		</location>
+		
+		<location>
+			<place>Bar 802</place>
+			<url>https://bar802.com/</url>
+		</location>
+		
+</places>

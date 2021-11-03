@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="simple.xsl"?>
+<stats>
+	
+	<category>
+	<cat>5 and under:</cat>
+		<data>$20</data>
+	</category>
+	
+	<category>
+	<cat>Junior:</cat>
+		<data>$159</data>
+	</category>
+	
+	<category>	
+	<cat>Teen:</cat>
+		<data>$750</data>
+	</category>	
+		
+	<category>	
+	<cat>Adult:</cat>
+		<data>$1080</data>
+	</category>	
+	
+	<category>	
+	<cat>Senior:</cat>
+		<data>$599</data>
+	</category>	
+	
+	<category>	
+	<cat>Senior Plus:</cat>
+		<data>$549</data>
+	</category>	
+		
+</stats>

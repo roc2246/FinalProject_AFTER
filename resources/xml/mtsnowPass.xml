@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="simple.xsl"?>
+<stats>
+	
+	<category>
+	<cat>Youth:</cat>
+		<data>$156</data>
+	</category>
+	
+	<category>
+	<cat>Local Pass:</cat>
+		<data>$739</data>
+	</category>
+	
+	<category>	
+	<cat>Local College Pass:</cat>
+		<data>$659</data>
+	</category>	
+		
+	<category>	
+	<cat>Epic Pass:</cat>
+		<data>$989</data>
+	</category>	
+		
+</stats>

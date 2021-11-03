@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="simple.xsl"?>
+<stats>
+	
+	<category>
+	<cat>Average Snow Fall:</cat>
+		<data>180"</data>
+	</category>
+	
+	<category>
+	<cat>Vertical Descent:</cat>
+		<data>2.003'</data>
+	</category>
+	
+	<category>	
+	<cat>Mountain Height:</cat>
+		<data>3,940'</data>
+	</category>	
+		
+	<category>	
+	<cat>Longest Run:</cat>
+		<data>Mike's Way</data>
+	</category>	
+		
+</stats>

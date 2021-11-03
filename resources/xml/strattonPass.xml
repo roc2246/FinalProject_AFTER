@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="simple.xsl"?>
+<stats>
+	
+	<category>
+	<cat>5 to 12:</cat>
+		<data>$399.99</data>
+	</category>
+	
+	<category>
+	<cat>13 to 22:</cat>
+		<data>$799.99</data>
+	</category>
+	
+	<category>	
+	<cat>23 and Up:</cat>
+		<data>$1049.00</data>
+	</category>	
+		
+</stats>

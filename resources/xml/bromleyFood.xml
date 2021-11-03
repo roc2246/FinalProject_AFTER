@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="simple.xsl"?>
+<places>
+	
+		<location>
+			<place>JJ Hapgood General Store and Eatery</place>
+			<url>https://jjhapgood.com/</url>
+		</location>
+		
+		<location>
+			<place>Bob's Diner</place>
+			<url>https://bobsdiner.business.site/</url>
+		</location>
+		
+		<location>
+			<place>Raven's Den Steakhouse and Taproom</place>
+			<url>https://www.ravensdensteakhouse.com/</url>
+		</location>
+		
+</places>

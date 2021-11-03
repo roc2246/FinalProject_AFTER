@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="simple.xsl"?>
+<places>
+	
+		<location>
+			<place>The Black Bear Lodge</place>
+			<url>https://the-black-bear-lodge-stratton-mountain.booked.net/</url>
+		</location>
+		
+		<location>
+			<place>Vantager Village Point</place>
+			<url>https://vantage-point-villas-stratton-mountain.booked.net/</url>
+		</location>
+		
+		<location>
+			<place>Long Trail House</place>
+			<url>http://www.strattonrealestate.com/areas/long-trail-house</url>
+		</location>
+		
+</places>

@@ -1,0 +1,12 @@
+Due to their file size, the movies of the week are not in this location. 
+For those who want to test the "movie of the week" feature, either
+locally or through another server, download the movies through the 
+following URL:
+
+http://roc09090.classweb.ccv.edu/intro_to_prog/FinalProject/downloads.php
+or any absolute URL with 'downloads.php' at the end
+
+then place them in the MOTW Directory. Otherwise, check them out on the
+website's main page:
+
+http://roc09090.classweb.ccv.edu/intro_to_prog/FinalProject/index.php

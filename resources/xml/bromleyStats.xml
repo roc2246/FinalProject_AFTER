@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="simple.xsl"?>
+<stats>
+	
+	<category>
+	<cat>Average Snow Fall:</cat>
+		<data>185"</data>
+	</category>
+	
+	<category>
+	<cat>Vertical Descent:</cat>
+		<data>1,334'</data>
+	</category>
+	
+	<category>	
+	<cat>Mountain Height:</cat>
+		<data>3,281'</data>
+	</category>	
+		
+	<category>	
+	<cat>Longest Run:</cat>
+		<data>Pushover</data>
+	</category>	
+		
+</stats>

@@ -1,25 +1,3 @@
-<?php include 'include/header.php';?>
-<?php include 'include/navigation.php';?>
-<script src="resources/javaScript/quizAjax.js"></script>
-<div id ="content">
-<h1>Take Our Quiz</h1>
-
-<p><b>Question:</b>
-<span id="question">Click "Start the Quiz" to begin!</span>
-</p>
-<p><b>Answer:</b>
-<input type="text" name="answer" id="answer" autocomplete="off">
-<input type="button" value="Submit" id="submit" onclick="checkAnswer()">
-</p>
-<input type="button" value="Start the Quiz" id="startresq" onclick="getQuestions()">
-
-<p id="qR"></p>
-
-</div>
-
-<script src = "resources/javaScript/quiz.js"></script>
-
-<?php include 'include/footer.php';?>
-
-</body>
-</html>
+version https://git-lfs.github.com/spec/v1
+oid sha256:3fa2852cbfff25db15e2ffbe41252d2154abc2813ecae8293f258045b3d3dfba
+size 672

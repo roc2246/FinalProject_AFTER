@@ -1,10 +1,3 @@
- <?php
-$hostname = "localhost";
-$dbuser = "roc09090";
-$dbpass = "je5umyju5";
-$dbname = "roc09090_wordpress";
-$con = new mysqli($hostname, $dbuser, $dbpass, $dbname);
-if($con->connect_error){
-die("Error connect to db");
-}
-?>
+version https://git-lfs.github.com/spec/v1
+oid sha256:0b3a592dc3532342b4d520fd4924b842b8826c6a12e1097b4b9d402ce10e7720
+size 223

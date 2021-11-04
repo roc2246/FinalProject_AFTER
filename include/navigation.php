@@ -1,10 +1,3 @@
-<nav>
-<ul>
-<li><a href="index.php">Home</a></li>
-<li><a href="mtsnow.php">Mt. Snow</a></li>
-<li><a href="stratton.php">Stratton</a></li>
-<li><a href="bromley.php">Bromley</a></li>
-<li><a href="newsletterSignup.php">Newsletter</a></li>
-<li><a href="quiz.php">Quiz</a></li>
-</ul>
-</nav>
+version https://git-lfs.github.com/spec/v1
+oid sha256:de524ba0b9a884c0b638b10506c94a3c2ec5fa4b6979749e170a623a3a4337a5
+size 284

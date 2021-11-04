@@ -1,3 +1,4 @@
+*.php filter=lfs diff=lfs merge=lfs -text
 MOTW/MOTW_movies/down_with_people.mp4 filter=lfs diff=lfs merge=lfs -text
 MOTW/MOTW_movies/forum_or_against'em.webm filter=lfs diff=lfs merge=lfs -text
 MOTW/MOTW_movies/forum_or_against/'em.webm filter=lfs diff=lfs merge=lfs -text

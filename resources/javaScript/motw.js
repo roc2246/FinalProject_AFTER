@@ -12,7 +12,7 @@ class movie {
   }
   URL(url, type) {
     document.getElementById("movieWeekly").setAttribute = ("type", "video/" + type);
-    document.getElementById("movieWeekly").src = "MOTW/" + url;
+    document.getElementById("movieWeekly").src = "MOTW/MOTW_movies/" + url;
     document.getElementById("video").load();
   }
 }

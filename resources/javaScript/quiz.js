@@ -1,118 +1,124 @@
-//Buttons
-var subBttn = document.getElementById("submit");
-var srQBttn = document.getElementById("startresq");
+/* eslint-disable no-useless-concat */
+/* eslint-disable no-unreachable-loop */
+/* eslint-disable no-alert */
+/* eslint-disable prefer-template */
+// Buttons
+const subBttn = document.getElementById('submit');
+const srQBttn = document.getElementById('startresq');
 
-//Text
-var qLeftDis = document.getElementById("qR");
-var qDisplay = document.getElementById("question");
+// Text
+const qLeftDis = document.getElementById('qR');
+const qDisplay = document.getElementById('question');
 
-//Textbox
-var answInput = document.getElementById("answer");
+// Textbox
+const answInput = document.getElementById('answer');
 
-//Main Content
-var quizArea = document.getElementById("content");
+// Main Content
+const quizArea = document.getElementById('content');
 
-//Disables submit button before questions load
+// Stores the number of questions left
+let qLeft = 4;
+
+// Disables submit button before questions load
 subBttn.disabled = true;
 
-//Replaces the "Start the Quiz" button with the "Reload Quiz" button
+// Replaces the "Start the Quiz" button with the "Reload Quiz" button
 function resetBttn() {
-  srQBttn.setAttribute("value", "Reload Quiz");
-  srQBttn.setAttribute("onclick", "location.reload()");
-  quizArea.insertBefore(srQBttn, document.getElementById("script"));
+  srQBttn.setAttribute('value', 'Reload Quiz');
+  srQBttn.setAttribute('onclick', 'location.reload()');
+  quizArea.insertBefore(srQBttn, document.getElementById('script'));
 }
 
-//Loads the questions from the XML file
+// Loads the questions from the XML file
+// eslint-disable-next-line no-unused-vars
 function getQuestions() {
-  qDisplay.firstChild.nodeValue="please wait...";
-  loadXML("questions.xml");
-  subBttn.removeAttribute("disabled");
-  qLeftDis.innerHTML = "<b>Questions Remaining:</b> " + qLeft;
+  qDisplay.firstChild.nodeValue = 'please wait...';
+  // eslint-disable-next-line no-undef
+  loadXML('questions.xml');
+  subBttn.removeAttribute('disabled');
+  qLeftDis.innerHTML = '<b>Questions Remaining:</b> ' + qLeft;
   resetBttn();
 }
 
-//Tracks Current Question Number
-var qNo = 0;
+// Tracks Current Question Number
+let qNo = 0;
 
-//Displays the next question
-function nextQuestion() {
-  var questions = xhttp.responseXML.getElementsByTagName("q");
-  if (qNo < questions.length) {
-    var currentQ = questions[qNo].firstChild.nodeValue;
-    qDisplay.firstChild.nodeValue = currentQ;
-    answInput.focus();
-  } else {
-    qDisplay.firstChild.nodeValue="Click 'Reload Quiz' to reset the quiz data!";
-    endOfQuiz();
-    }
+// Stores correct answers
+const answCorrect = [];
+
+// Calculates user's score
+function score() {
+  return (answCorrect.length / 4) * 100 + '%';
 }
 
-//Stores correct answers
-var answCorrect = [];
+// Displays Quiz Results
+function displayResults() {
+  // Creates heading for results
+  const resultsHead = document.createElement('h2');
+  quizArea.insertBefore(resultsHead, document.getElementById('script'));
+  resultsHead.innerHTML = 'Results';
 
-//Checks the user's answer
-function checkAnswer() {
-  var answers = xhttp.responseXML.getElementsByTagName("a");
-  var currAnswer = answers[qNo].firstChild.nodeValue;
-  if (currAnswer == answInput.value) {
-    alert("Correct!");
-    answCorrect.push(answInput.value);
-  }
-  else {
-    alert("Incorrect. The correct answer is: " + currAnswer);
-  }
-  qNo = qNo + 1;
-  answInput.value="";
-  nextQuestion();
-  displayQLeft();
+  // Creates details for results
+  const results = document.createElement('div');
+  quizArea.insertBefore(results, document.getElementById('script'));
+  results.setAttribute('id', 'quizResults');
+  results.innerHTML = "<span class='details'>Answers Correct:</span> "
+    + answCorrect.length
+    + "<br><span class='details'>Number of Questions:</span> " + '4'
+    + '<br>'
+    + "<span class='details'>Score:</span> " + score() + '</div>';
 }
 
-//Stores the number of questions left
-var qLeft = 4;
-
-//Displays number of questions remaining
-function displayQLeft() {
-  while (qLeft <= 4) {
-    qLeft = qLeft - 1;
-    qLeftDis.innerHTML = "<b>Questions Remaining:</b> " + qLeft;
-    if (qLeft == 0) {
-        qLeftDis.remove();
-       }
-    break;
-  }
-}
-
-//Events that trigger once quiz is over
+// Events that trigger once quiz is over
 function endOfQuiz() {
   subBttn.disabled = true;
   displayResults();
 }
 
-//Calculates user's score
-function score () {
-  return (answCorrect.length / 4)*100 + "%";
+// Displays the next question
+function nextQuestion() {
+  // eslint-disable-next-line no-undef
+  const questions = xhttp.responseXML.getElementsByTagName('q');
+  if (qNo < questions.length) {
+    const currentQ = questions[qNo].firstChild.nodeValue;
+    qDisplay.firstChild.nodeValue = currentQ;
+    answInput.focus();
+  } else {
+    qDisplay.firstChild.nodeValue = "Click 'Reload Quiz' to reset the quiz data!";
+    endOfQuiz();
+  }
 }
 
-//Displays Quiz Results
-function displayResults () {
-  //Creates heading for results
-  var resultsHead = document.createElement("h2");
-  quizArea.insertBefore(resultsHead, document.getElementById("script"));
-  resultsHead.innerHTML = "Results";
-
-  //Creates details for results
-  var results = document.createElement("div");
-  quizArea.insertBefore(results, document.getElementById("script"));
-  results.setAttribute("id", "quizResults");
-  results.innerHTML =
-    "<span class='details'>Answers Correct:</span> " +
-    answCorrect.length +
-    "<br><span class='details'>Number of Questions:</span> " + "4" + 
-	"<br>" +
-    "<span class='details'>Score:</span> " + score(); +
-    "</div>";
+// Displays number of questions remaining
+function displayQLeft() {
+  while (qLeft <= 4) {
+    qLeft -= 1;
+    qLeftDis.innerHTML = '<b>Questions Remaining:</b> ' + qLeft;
+    if (qLeft === 0) {
+      qLeftDis.remove();
+    }
+    break;
+  }
 }
 
-/*Note: I realize that the value of "document.getElementById("script")" is null.
+// Checks the user's answer
+// eslint-disable-next-line no-unused-vars
+function checkAnswer() {
+  // eslint-disable-next-line no-undef
+  const answers = xhttp.responseXML.getElementsByTagName('a');
+  const currAnswer = answers[qNo].firstChild.nodeValue;
+  if (currAnswer === answInput.value) {
+    alert('Correct!');
+    answCorrect.push(answInput.value);
+  } else {
+    alert('Incorrect. The correct answer is: ' + currAnswer);
+  }
+  qNo += 1;
+  answInput.value = '';
+  nextQuestion();
+  displayQLeft();
+}
+
+/* Note: I realize that the value of "document.getElementById("script")" is null.
 The reason I have it in my JS code is to make certain elements appear and rearrange
-when needed.*/
+when needed. */

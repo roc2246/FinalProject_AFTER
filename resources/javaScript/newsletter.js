@@ -37,4 +37,11 @@ function isEmail(form, email, handler) {
     form.setAttribute('action', '');
     form.setAttribute('onsubmit', 'return false;');
   }
+
+  // Checks if both sub and unsub fields have values
+  if (subTxtBox.value !== '' && unsubTxtBox.value !== '') {
+    alert('Please enter only one email.');
+    form.setAttribute('action', '');
+    form.setAttribute('onsubmit', 'return false;');
+  }
 }
